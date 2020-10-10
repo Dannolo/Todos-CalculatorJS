@@ -1,0 +1,42 @@
+<!-- Rendering to DOM the buttons and display. -->
+
+<app-display
+[value]=value
+></app-display>
+<div class="component-button-panel">
+
+    <div>
+        <app-button name='AC' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='+/-'class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='%' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='÷' class="component-button orange button" (click)=catchButton($event)></app-button>
+    </div>
+
+    <div>
+        <app-button name='7' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='8' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='9' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='x' class="component-button orange button" (click)=catchButton($event)></app-button>
+    </div>
+
+    <div>
+        <app-button name='4' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='5' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='6' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='-' class="component-button orange button" (click)=catchButton($event)></app-button>
+    </div>
+
+    <div>
+        <app-button name='1' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='2' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='3' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='+' class="component-button orange button" (click)=catchButton($event)></app-button>
+    </div>
+
+    <div>
+        <app-button name='0' class="component-button wide button" (click)=catchButton($event)></app-button>
+        <app-button name='.' class="component-button button" (click)=catchButton($event)></app-button>
+        <app-button name='=' class="component-button orange button" (click)=catchButton($event)></app-button>
+    </div>
+
+</div>

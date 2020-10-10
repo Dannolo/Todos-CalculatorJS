@@ -1,0 +1,14 @@
+<mat-drawer-container autosize>
+  </mat-drawer-container>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Menù</p><br>
+    <a routerLink="/calculator">Calculator</a><br>
+    <a routerLink="/todo">Todo List</a>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button mat-raised-button color="primary" type="button" mat-button (click)="drawer.toggle()">
+      Menù
+    </button>
+  </div>

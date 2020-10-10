@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Todo List</h1>
+    <input class="note" #tododescription placeholder="Cosa vuoi scrivere?">
+
+    <ng-container *ngIf='dashboard.length !== 0'>
+    <div cdkDropList class="list" (cdkDropListDropped)="drop($event)">
+        
+        <div *ngFor="let todo of dashboard" class="list-item" cdkDrag>
+            <app-todo [description]='todo'></app-todo>
+            <div class="example-button-row">
+            <button mat-raised-button color="primary" (click)='remove_todo(todo)'>Elimina</button>
+            </div>
+        </div>
+    
+    </div>
+</ng-container>
+<p class="presentation" *ngIf="dashboard.length === 0">Todo list creata per ricordare i propri doveri!</p><br>
+
+<div class="example-button-row">
+    <button mat-raised-button color="primary" (click)="add_todo(tododescription)" >Cliccami</button>
+    <button mat-raised-button color="warn" (click)='removeAll_todo()'>Togli tutto</button>
+    </div>
+
+</div>

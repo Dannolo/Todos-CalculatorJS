@@ -1,0 +1,50 @@
+/* CSS COPIED FROM THE ONE OF REACT TO LOOK THE SAME */
+/* Button Panel  */
+
+.component-button-panel {
+    background-color: #858694;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+  }
+  
+  .component-button-panel > div {
+    width: 100%;
+    margin-bottom: 1px;
+    flex: 1 0 auto;
+    display: flex;
+  }
+
+/* Button
+orange class is for the rightmost column
+wide class only for the last row where there are less elements */
+
+.component-button {
+    display: inline-flex;
+    width: 25%;
+    flex: 1 0 auto;
+    height: 100px;
+  }
+  
+  .component-button.wide {
+    width: 50%;
+  }
+  
+  .component-button button {
+    background-color: #e0e0e0;
+    border: 0;
+    font-size: 1.5rem;
+    margin: 0 1px 0 0;
+    flex: 1 0 auto;
+    padding: 0;
+  }
+  
+  .component-button:last-child button {
+    margin-right: 0;
+  }
+  
+  .component-button.orange button {
+    background-color: #f5923e;
+    color: white;
+  }

@@ -1,0 +1,21 @@
+    .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 90%;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  a{
+    margin-top: 10px;
+    font-size: 2vh;
+    border: 0px;
+    border-color: black;
+
+  }
